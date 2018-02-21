@@ -1,0 +1,23 @@
+{
+  "name": "osu.js",
+  "version": "1.0.0",
+  "description": "osu api handler",
+  "main": "index.js",
+  "dependencies": {
+    "request": "^2.83.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rikidere/osu.js.git"
+  },
+  "author": "rikidere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rikidere/osu.js/issues"
+  },
+  "homepage": "https://github.com/Rikidere/osu.js#readme"
+}
