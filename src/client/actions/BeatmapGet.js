@@ -1,9 +1,9 @@
 //const Beatmap = require('../struct/Beatmap');
+const parser = require('../../parser/MainParser');
 
 class BeatmapGet {
   constructor(client) {
     this.client = client;
-    console.log('test');
   }
 
   async getById(id) {
@@ -19,8 +19,14 @@ class BeatmapGet {
     var body = await this.client.request.makeRequest(data);
 
     var bm = body[0];
-    console.log(bm);
     return bm;
   }
+
+  async getByLine(line){
+    var res = await parser.parseLine(line);
+    res.bm = await this.getById(res.id);
+    return res;
+  }
+
 }
 module.exports = BeatmapGet;

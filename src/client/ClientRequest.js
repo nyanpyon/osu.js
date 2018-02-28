@@ -16,10 +16,11 @@ class Request {
     return new Promise(resolve => {
       request(options, function(err, response, body) {
         if (err) {
-          console.log(err);
+          console.error(err);
           return;
         }
-        console.log("Get response: " + response.statusCode);
+        if(response.statusCode !== 200)
+          resolve({error : "HTTPrequest failed, server offline? Key missing?"}) && console.log(`error while trying to pull data ${res.statusCode}`);
         resolve(body);
       });
     });

@@ -1,0 +1,6 @@
+{
+  "expand" : {
+    "short" : "e",
+    "flag" : true
+  }
+}

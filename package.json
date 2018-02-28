@@ -4,6 +4,7 @@
   "description": "osu api handler",
   "main": "index.js",
   "dependencies": {
+    "options-parser": "^0.4.0",
     "request": "^2.83.0"
   },
   "devDependencies": {},
@@ -15,6 +16,7 @@
     "url": "git+https://github.com/Rikidere/osu.js.git"
   },
   "author": "rikidere",
+  "main": "./src/index",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Rikidere/osu.js/issues"
